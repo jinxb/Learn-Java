@@ -1,0 +1,23 @@
+# server config
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+# spring config
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/jgdb?serverTimezone=GMT&useSSL=false&characterEncoding=utf-8
+    username: root
+    password: jin123.
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+#mybatis-plus:
+#  type-aliases-package: com.hbnu.dao
+#  mapper-locations: mybatis/mapper/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true

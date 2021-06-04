@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <update id="updateByIds">
+        update tb_item
+        set status = #{status},
+        updated = #{updated}
+        where id = in
+        <foreach collection="id" open="(" close=")" item="id" separator=",">
+            #{id}
+        </foreach>
+    </update>
+</mapper>
