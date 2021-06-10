@@ -8,9 +8,9 @@ server:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/jgdb?serverTimezone=GMT&useSSL=false&characterEncoding=utf-8
-    username: root
-    password: jin123.
+    url: jdbc:mysql://192.168.226.9:3306/jgdb?serverTimezone=GMT&useSSL=false&characterEncoding=utf-8
+    username: admin
+    password:
   mvc:
     view:
       prefix: /WEB-INF/views/
